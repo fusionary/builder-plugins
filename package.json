@@ -1,0 +1,48 @@
+{
+  "name": "create-repo",
+  "private": true,
+  "scripts": {
+    "build": "turbo build",
+    "clean": "git clean -xdf node_modules",
+    "clean:workspaces": "turbo clean",
+    "dev": "turbo dev",
+    "format": "turbo format --continue -- --cache --cache-location node_modules/.cache/.prettiercache",
+    "format:fix": "turbo format --continue -- --write --cache --cache-location node_modules/.cache/.prettiercache",
+    "preinstall": "npx only-allow pnpm",
+    "postinstall": "pnpm lint:ws",
+    "lint": "turbo lint --continue -- --cache --cache-location node_modules/.cache/.eslintcache",
+    "lint:fix": "turbo lint --continue -- --fix --cache --cache-location node_modules/.cache/.eslintcache",
+    "lint:ws": "pnpm dlx sherif@latest",
+    "packages:check": "npm-check-updates",
+    "packages:sync": "syncpack",
+    "packages:update": "npm-check-updates -u && pnpm i",
+    "prepare": "husky",
+    "storybook": "turbo storybook",
+    "typecheck": "turbo typecheck"
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json}": [
+      "prettier --write"
+    ]
+  },
+  "prettier": "@local/prettier-config",
+  "devDependencies": {
+    "@local/prettier-config": "workspace:*",
+    "@turbo/gen": "^2.0.12",
+    "husky": "^9.1.4",
+    "lint-staged": "^15.2.8",
+    "npm-check-updates": "^17.0.6",
+    "prettier": "^3.3.3",
+    "syncpack": "^12.4.0",
+    "turbo": "^2.0.12",
+    "typescript": "^5.5.4"
+  },
+  "packageManager": "pnpm@9.6.0+sha512.38dc6fba8dba35b39340b9700112c2fe1e12f10b17134715a4aa98ccf7bb035e76fd981cf0bb384dfa98f8d6af5481c2bef2f4266a24bfa20c34eb7147ce0b5e",
+  "engines": {
+    "node": ">=20.11.1"
+  }
+}

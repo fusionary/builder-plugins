@@ -1,0 +1,19 @@
+{
+  "tasks": [
+    {
+      "args": ["i"],
+      "command": "pnpm",
+      "group": "none",
+      "label": "pnpm install",
+      "presentation": {
+        "close": true,
+        "panel": "new",
+        "reveal": "always",
+        "revealProblems": "onProblem",
+        "showReuseMessage": false
+      },
+      "type": "process"
+    }
+  ],
+  "version": "2.0.0"
+}

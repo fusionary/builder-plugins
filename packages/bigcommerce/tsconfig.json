@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "lib": ["dom", "dom.iterable", "ES2022"],
+    "noEmit": false,
+    "paths": {
+      "@local/utils/*": ["src/*/index.ts"]
+    },
+    "tsBuildInfoFile": "node_modules/.cache/tsbuildinfo.json"
+  },
+  "exclude": ["node_modules", "webpack.config.cjs"],
+  "extends": "@local/tsconfig/base.json",
+  "include": ["."]
+}

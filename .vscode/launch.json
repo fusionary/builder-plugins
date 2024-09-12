@@ -1,0 +1,32 @@
+{
+  "configurations": [
+    {
+      "command": "pnpm dev --filter web...",
+      "cwd": "${workspaceFolder}/",
+      "name": "Web",
+      "preLaunchTask": "pnpm install",
+      "request": "launch",
+      "skipFiles": ["<node_internals>/**"],
+      "type": "node-terminal"
+    },
+    {
+      "command": "pnpm dev --filter payload...",
+      "cwd": "${workspaceFolder}/",
+      "name": "Payload",
+      "preLaunchTask": "pnpm install",
+      "request": "launch",
+      "skipFiles": ["<node_internals>/**"],
+      "type": "node-terminal"
+    },
+    {
+      "command": "pnpm storybook --filter docs...",
+      "cwd": "${workspaceFolder}/",
+      "name": "Docs",
+      "preLaunchTask": "pnpm install",
+      "request": "launch",
+      "skipFiles": ["<node_internals>/**"],
+      "type": "node-terminal"
+    }
+  ],
+  "version": "0.2.0"
+}

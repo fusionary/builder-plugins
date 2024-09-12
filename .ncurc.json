@@ -1,0 +1,9 @@
+{
+  "$schema": "https://raw.githubusercontent.com/raineorshine/npm-check-updates/main/src/types/RunOptions.json",
+  "deep": true,
+  "enginesNode": true,
+  "format": ["group", "repo", "time"],
+  "packageManager": "pnpm",
+  "peer": true,
+  "target": "semver"
+}

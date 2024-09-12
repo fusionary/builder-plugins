@@ -1,0 +1,75 @@
+{
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "cSpell.words": [
+    "autoapply",
+    "bigcommerce",
+    "clsx",
+    "Codegen",
+    "deepmerge",
+    "Embla",
+    "Fusionary",
+    "headlessui",
+    "heroicons",
+    "jiti",
+    "Lucide",
+    "Nextjs",
+    "oidc",
+    "oklch",
+    "payloadcms",
+    "RESIZER",
+    "Skus",
+    "tada",
+    "tailwind",
+    "tailwindcss",
+    "Terrateam",
+    "tsbuildinfo",
+    "tsup",
+    "turborepo"
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.formatDocument": "explicit"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "eslint.rules.customizations": [{ "rule": "*", "severity": "warn" }],
+  "eslint.workingDirectories": [
+    { "pattern": "apps/*/" },
+    { "pattern": "packages/*/" },
+    { "pattern": "tooling/*/" }
+  ],
+  "files.exclude": {
+    "**/.DS_Store": true,
+    "**/.bundle": true,
+    "**/.cache": true,
+    "**/.git": true,
+    "**/.husky": true,
+    "**/.idea": true,
+    "**/.next": true,
+    "**/.open-next": true,
+    "**/.parcel-cache": true,
+    "**/.sst": true,
+    "**/.turbo": true,
+    "**/Thumbs.db": true,
+    "**/build": true,
+    "**/dist": true,
+    "**/node_modules": true
+  },
+  "files.insertFinalNewline": true,
+  "tailwindCSS.experimental.classRegex": [
+    ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
+    ["cx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"],
+    ["(?:twMerge|twJoin|cn)\\(([^\\);]*)[\\);]", "[`'\"`]([^'\"`,;]*)[`'\"`]"],
+    ["className[=:]\\s*", "[\"'`]([^\"'`]*)[\"'`]"]
+  ],
+  "tailwindCSS.experimental.configFile": "./tooling/tailwind/src/tailwind.ts",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "typescript.preferences.autoImportFileExcludePatterns": [
+    "next/router.d.ts",
+    "next/dist/client/router.d.ts"
+  ],
+  "typescript.tsdk": "node_modules/typescript/lib"
+}
