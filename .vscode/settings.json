@@ -21,8 +21,6 @@
     "RESIZER",
     "Skus",
     "tada",
-    "tailwind",
-    "tailwindcss",
     "Terrateam",
     "tsbuildinfo",
     "tsup",
@@ -58,13 +56,6 @@
     "**/node_modules": true
   },
   "files.insertFinalNewline": true,
-  "tailwindCSS.experimental.classRegex": [
-    ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"],
-    ["cx\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"],
-    ["(?:twMerge|twJoin|cn)\\(([^\\);]*)[\\);]", "[`'\"`]([^'\"`,;]*)[`'\"`]"],
-    ["className[=:]\\s*", "[\"'`]([^\"'`]*)[\"'`]"]
-  ],
-  "tailwindCSS.experimental.configFile": "./tooling/tailwind/src/tailwind.ts",
   "typescript.enablePromptUseWorkspaceTsdk": true,
   "typescript.preferences.autoImportFileExcludePatterns": [
     "next/router.d.ts",

@@ -1,7 +1,5 @@
 {
   "recommendations": [
-    "amazonwebservices.aws-toolkit-vscode",
-    "bradlc.vscode-tailwindcss",
     "csstools.postcss",
     "dbaeumer.vscode-eslint",
     "esbenp.prettier-vscode",
@@ -12,9 +10,7 @@
     "ms-vsliveshare.vsliveshare",
     "pflannery.vscode-versionlens",
     "streetsidesoftware.code-spell-checker",
-    "unifiedjs.vscode-mdx",
     "wix.vscode-import-cost",
-    "DavidAnson.vscode-markdownlint",
     "YoavBls.pretty-ts-errors"
   ]
 }

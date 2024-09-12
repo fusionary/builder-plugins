@@ -8,7 +8,6 @@ const config = {
     'turbo',
     'eslint:recommended',
     'plugin:storybook/recommended',
-    'plugin:tailwindcss/recommended',
     'plugin:perfectionist/recommended-natural-legacy',
     'plugin:@shopify/esnext',
     'plugin:@shopify/typescript',
@@ -71,9 +70,6 @@ const config = {
 
     'perfectionist/sort-enums': ['off'],
     'perfectionist/sort-imports': ['off'],
-
-    'tailwindcss/classnames-order': ['off'],
-    'tailwindcss/no-custom-classname': ['off'],
 
     'unused-imports/no-unused-imports-ts': ['error'],
   },

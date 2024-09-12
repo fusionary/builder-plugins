@@ -1,10 +1,7 @@
-import { fileURLToPath } from 'url'
-
 /** @typedef {import("prettier").Config} PrettierConfig */
-/** @typedef {import("prettier-plugin-tailwindcss").PluginOptions} TailwindConfig */
 /** @typedef {import("@ianvs/prettier-plugin-sort-imports").PluginConfig} SortImportsConfig */
 
-/** @type { PrettierConfig | SortImportsConfig | TailwindConfig } */
+/** @type { PrettierConfig | SortImportsConfig } */
 const config = {
   arrowParens: 'avoid',
   bracketSpacing: true,
@@ -18,12 +15,7 @@ const config = {
     '@ianvs/prettier-plugin-sort-imports',
     'prettier-plugin-packagejson',
     'prettier-plugin-sort-json',
-    'prettier-plugin-tailwindcss',
   ],
-  tailwindConfig: fileURLToPath(
-    new URL('../../tooling/tailwind/src/tailwind.ts', import.meta.url),
-  ),
-  tailwindFunctions: ['cn', 'clsx', 'cva', 'tw', 'twMerge', 'classNames'],
   jsonRecursiveSort: true,
   importOrder: [
     '<TYPES>',

@@ -38,7 +38,6 @@
     "eslint-plugin-react-hooks": "^4.6.2",
     "eslint-plugin-simple-import-sort": "^10.0.0",
     "eslint-plugin-storybook": "^0.8.0",
-    "eslint-plugin-tailwindcss": "^3.17.4",
     "eslint-plugin-unused-imports": "^3.2.0"
   },
   "devDependencies": {
@@ -47,7 +46,6 @@
     "@types/eslint": "^8.56.11",
     "eslint": "^8.57.0",
     "prettier": "^3.3.3",
-    "tailwindcss": "^3.4.9",
     "typescript": "^5.5.4"
   }
 }
