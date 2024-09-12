@@ -166,14 +166,6 @@ registerCommercePlugin(
             accessToken,
           )
 
-          const query = {
-            brand_id: brandId,
-            is_visible: true,
-            keyword: search,
-          }
-
-          console.log('query', query)
-
           /* eslint-disable @typescript-eslint/naming-convention */
           const products = await client.GET('/catalog/products', {
             params: {
