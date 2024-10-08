@@ -84,7 +84,7 @@ registerCommercePlugin(
       ...product,
       handle: product.sku!,
       id: `${product.id}`,
-      title: product.name!,
+      title: `${product.sku} - ${product.name}`,
       ...(product.images?.[0]?.url_standard && {
         image: {
           src: product.images[0].url_standard,
